@@ -5,10 +5,12 @@ import java.util.Scanner;
 
 public class View {
 
-    private static int a;
-    private static int b;
-    private static String operator;
-    private static int resultat;
+    protected static int a;
+    protected static int b;
+    protected static String operator;
+
+
+
 
     public static void getMenu() {
         System.out.println("Калькулятор");
@@ -21,40 +23,7 @@ public class View {
         System.out.println("Введите вторую цифру:");
         b = scanner.nextInt();
 
-        if (operator.equals("+")) {
-            resultat = a + b;
-            System.out.println(a + operator + b + "=" + resultat);
-        }
-        else if (operator.equals("-")) {
-            resultat = a - b;
-            System.out.println(a + operator + b + "=" + resultat);
-        }
-        else if (operator.equals("*")) {
-            resultat = a * b;
-            System.out.println(a + operator + b + "=" + resultat);
-        }
-        else if (operator.equals("/")) {
-            resultat = a / b;
-            System.out.println(a + operator + b + "=" + resultat);
-        }
     }
 
-    public static int getA() {
-        return a;
-    }
 
-    public static int getB() {
-        return b;
-    }
-
-    public static String getOperator() {
-        return operator;
-    }
-
-    public static int getResultat() {
-        return resultat;
-    }
-
-    public View() {
-    }
 }
